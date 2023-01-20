@@ -9,6 +9,7 @@ services:
     volumes:
       - user_home:/home/user
       - cond_env:/opt/conda/envs
+      - .:/app
     deploy:
       resources:
         reservations:

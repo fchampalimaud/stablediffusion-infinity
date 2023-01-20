@@ -16,7 +16,7 @@ USER user
 
 RUN mkdir ~/.huggingface && conda init bash
 
-COPY --chown=user:user . /app
+#COPY --chown=user:user . /app
 WORKDIR /app
 
 EXPOSE 8888
