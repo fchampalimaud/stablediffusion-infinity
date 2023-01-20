@@ -1125,6 +1125,7 @@ with blocks as demo:
         ],
         outputs=[model_output, sd_prompt, model_output_state],
         _js=proceed_button_js,
+        api_name="outpaint"
     )
     # cancel button can also remove error overlay
     if tuple(map(int,gr.__version__.split("."))) >= (3,6):
