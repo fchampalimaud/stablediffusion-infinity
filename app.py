@@ -818,7 +818,7 @@ def run_outpaint(
         )
     width, height = pil.size
     sel_buffer = np.array(pil)
-    cur_model = get_model(ModelChoice.INPAINTING2.value)
+    cur_model = get_model(model_choice=ModelChoice.INPAINTING2.value)
     images = cur_model.run(
         image_pil=pil,
         prompt=prompt_text,
